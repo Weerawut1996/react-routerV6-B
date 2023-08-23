@@ -1,6 +1,7 @@
 # npm
 - "react-router-dom": "^6.15.0"
 
-```cmd
+```bash
+npm i
 npm i react-router-dom@6.15.0
 ```
