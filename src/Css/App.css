@@ -1,0 +1,62 @@
+#root {
+   display: grid;
+   grid-template-areas:
+      "Header"
+      "navbar"
+      "section"
+      "Footer"
+}
+
+#root > header {
+   grid-area: Header;
+}
+
+#root > nav {
+   grid-area: navbar;
+}
+
+#root > section {
+   grid-area: section;
+}
+
+#root > Footer {
+   grid-area: Footer;
+}
+
+.main-navbar{
+   display: flex;
+   gap: 10px;
+   padding: .25rem 0;
+   list-style-type: none;
+   background-color: #000;   
+   justify-content: center;
+}
+.main-navbar a {
+   color: #fff;
+   text-decoration: none;
+}
+
+section.container{
+   display: grid;
+   width: 70vw;
+   margin: 0 auto;
+   grid-template-columns: 1fr 4fr;
+   grid-template-areas:"supnav content";
+}
+section.OnlyContant > *{
+   display: block;
+   width: 70vw;
+   margin: 0 auto;
+}
+
+section.container > nav{
+   grid-area: supnav;
+}
+section.container > div{
+   grid-area: content;
+}
+@media screen and (max-width: 600px) {
+   section.container{
+     display: block;
+   }
+ }
